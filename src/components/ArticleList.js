@@ -20,7 +20,7 @@ class ArticleList extends React.Component {
     const { articles } = this.props;
     return articles.map((item) => {
       const { title } = item;
-      return <div> {title}</div>;
+      return <div key={item.id}> {title}</div>;
     });
   }
 }
